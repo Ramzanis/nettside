@@ -125,20 +125,3 @@
 
 
 })(window.jQuery);
-
-
-const codeBanner = document.querySelector("#code-banner");
-const codeSnippets = [
-  "console.log('Hello World');",
-  "const x = 10;",
-  "let y = 20;",
-  "function add(a, b) { return a + b; }"
-];
-
-function displayCode() {
-  const randomIndex = Math.floor(Math.random() * codeSnippets.length);
-  codeBanner.innerHTML = codeSnippets[randomIndex];
-}
-
-displayCode();
-setInterval(displayCode, 1000); // display new code every second
